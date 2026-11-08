@@ -4,9 +4,22 @@ Ce script cree un PowerPoint a partir d'un planning Excel. Il genere une diaposi
 
 ## Prerequis
 
-- Python installe sur l'ordinateur
 - Un fichier Excel `.xlsx` contenant le planning
 - Une connexion Internet si le telechargement automatique des photos est active
+
+### Installer et verifier Python (Windows)
+
+1. Telechargez l'installateur Windows depuis la [page officielle des versions de Python](https://www.python.org/downloads/windows/).
+2. Lancez le fichier `.exe` telecharge.
+3. Dans l'installateur, cochez **Add Python to PATH**, puis cliquez sur **Install Now**. L'installation pour tous les utilisateurs est facultative.
+4. Ouvrez PowerShell et verifiez l'installation :
+
+```powershell
+python --version
+python -m pip --version
+```
+
+Les deux commandes doivent afficher une version. Si `python` n'est pas reconnu, relancez l'installateur, cochez **Add Python to PATH**, puis ouvrez une nouvelle fenetre PowerShell.
 
 Depuis PowerShell, ouvrez le dossier du projet puis installez les dependances :
 
